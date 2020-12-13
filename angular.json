@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "tp-angular"
+  "defaultProject": "tp-angular",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+$rojo: #f44336;
+$negro: #000;
+$blanco: white;
+html,body{
+
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 2em auto  20%;
+    grid-template-areas: "hd hd"
+                        "sidebar main"
+                        "footer footer";
+
+}
+
+
+
+header{
+
+    // grid-area: hd;
+    background-color: $rojo ;
+
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    nav{
+
+
+
+        ul{
+            display: flex;
+
+            flex-direction: row;
+            justify-content: space-evenly;
+            list-style-type: none;
+            margin: 0;
+            align-items: center;
+  
+
+            li a {
+                flex-grow: 1;
+                padding: 1em;
+
+                &:hover {
+                    background: darken($blanco, 10%);
+                    
+                }
+            }
+        }
+
+    }
+}
+
